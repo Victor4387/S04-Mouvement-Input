@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Course : MonoBehaviour
-{
-    [SerializeReference] GameObject poissonCible;
-    
+{   
 
     void Update()
     {
-        float vitesse = Random.Range(2f, 10f);
+        float vitesse = Random.Range(1f, 20f);
         transform.Translate(0, 0, vitesse * Time.deltaTime);
-    }
-    void Test()
-    {
-            Debug.Log("Fish" + "wins");
     }
 }
